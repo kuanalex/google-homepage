@@ -1,13 +1,11 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box ;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
-section 
-{
+section {
   position: relative;
   width: 100%;
   display: flex;
@@ -16,8 +14,7 @@ section
   min-height: 100vh;
 }
 
-section header 
-{
+section header {
   position: absolute;
   top: 0;
   width: 100%;
@@ -26,51 +23,54 @@ section header
   padding: 20px;
 }
 
-section header ul 
-{
+section header ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section header ul li 
-{
+section header ul li {
   list-style: none;
   margin-left: 20px;
+  font-family: arial;
+  font-size: 14px;
 }
-section header ul li a 
-{
+
+section header ul li a {
 
   color: #111;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
 }
 
-section header ul li a:hover
-{
+section header ul li a:hover {
   text-decoration: underline;
-{
-
   color: #111;
-  text-decoration: none;
-  font-size: 13px;
-}
 }
 
-section header ul li button 
-{
-  background: #4583ef;
+
+section header ul li button {
+  background: #1a73e8;
   border: none;
   outline: none;
   padding: 8px 14px;
   color: #fff;
   font-size: 14px;
-  font-weight: 700;
-  border-radius: 3px;
+  font-weight: 500;
+  min-width: 96px;
+  padding: 9px 23px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
   cursor: pointer;
 }
-section .main 
-{
+
+section header ul li button:hover {
+  background-color: #2b7de9;
+  ;
+}
+
+section .main {
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -78,15 +78,13 @@ section .main
   justify-content: center;
 }
 
-section .main .searchBar 
-{
+section .main .searchBar {
   position: relative;
   width: 100%;
   margin-top: 20px;
 }
 
-section .main .searchBar .search 
-{
+section .main .searchBar .search {
   width: 100%;
   padding: 13px;
   padding-left: 45px;
@@ -97,8 +95,7 @@ section .main .searchBar .search
   font-size: 16px;
 }
 
-section .main .searchBar .icons 
-{
+section .main .searchBar .icons {
   position: absolute;
   top: 0;
   width: 100%;
@@ -109,17 +106,15 @@ section .main .searchBar .icons
   pointer-events: none;
 }
 
-section .main .buttons 
-{
+section .main .buttons {
   margin-top: 20px;
 }
 
-section .main .buttons button
-{
+section .main .buttons button {
   margin-top: 0 5px;
   padding: 12px 20px;
   color: #555;
-  background-color:#f8f9fa;
+  background-color: #f8f9fa;
   font-size: 14px;
   border: none;
   cursor: pointer;
@@ -128,37 +123,31 @@ section .main .buttons button
   outline: none;
 }
 
-section .main .buttons button:hover
-{
+section .main .buttons button:hover {
   border: 1px solid #ccc;
 }
 
-section .main .languages
-{
+section .main .languages {
   display: flex;
   margin-top: 30px;
 }
 
-section .main .languages li
-{
+section .main .languages li {
   list-style: none;
   margin: 0 5px;
   font-size: 13px;
 }
 
-section .main .languages li a
-{
+section .main .languages li a {
   text-decoration: none;
   color: #1a0dab;
 }
 
-section .main .languages li a:hover
-{
+section .main .languages li a:hover {
   text-decoration: underline;
 }
 
-section .footer
-{
+section .footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -166,43 +155,36 @@ section .footer
   background: #f2f2f2;
 }
 
-section .footer .row
-{
+section .footer .row {
   padding: 15px 25px;
-  border-top: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-section .footer .row .country
-{
+section .footer .row .country {
   color: #5f6368;
 }
 
-section .footer .row.row2
-{
+section .footer .row.row2 {
   display: flex;
   justify-content: space-between;
 }
 
-section .footer .row.row2 ul
-{
+section .footer .row.row2 ul {
   display: flex;
 }
 
-section .footer .row.row2 ul li
-{
+section .footer .row.row2 ul li {
   list-style: none;
 }
 
-section .footer .row.row2 ul li a
-{
+section .footer .row.row2 ul li a {
   text-decoration: none;
   font-size: 14px;
   color: #5f6368;
   margin-right: 25px;
 }
 
-section .footer .row.row2 ul:nth-child(2) li a
-{
+section .footer .row.row2 ul:nth-child(2) li a {
   text-decoration: none;
   font-size: 14px;
   color: #5f6368;
@@ -210,6 +192,3 @@ section .footer .row.row2 ul:nth-child(2) li a
   margin-left: 25px;
 
 }
-
-
-
