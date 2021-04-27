@@ -28,3 +28,25 @@ section header ul {
   justify-content: center;
   align-items: center;
 }
+
+section header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+section header ul li a {
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+section header ul li button {
+  background: #4583ef;
+  border: none;
+  outline: none;
+  padding: 8px 14px;
+  color: #fff;
+  font-size: 14px;
+  font-weight 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
