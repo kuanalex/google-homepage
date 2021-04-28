@@ -29,7 +29,12 @@ section {
   align-items: center;
   min-height: 100vh;
 }
-
+/* Absolute header to ensure it stays at the top
+   Top set to 0 to make it close to the top
+   Width 100% to make it full screen
+   Display flex to make the header a flex container
+   Justify content space between to push About/Store left and Gmail/Images right
+   Padding 20px for the spacing about the header*/
 section header {
   position: absolute;
   top: 0;
