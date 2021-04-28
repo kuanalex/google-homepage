@@ -29,7 +29,7 @@ section {
   align-items: center;
   min-height: 100vh;
 }
-/* Absolute header to ensure it stays at the top
+/* Absolute header to allow flexible positioning
    Top set to 0 to make it close to the top
    Width 100% to make it full screen
    Display flex to make the header a flex container
@@ -198,31 +198,44 @@ section .main .buttons button {
   border: 1px solid transparent;
   outline: none;
 }
-
+/* Border applied on hover
+   */
 section .main .buttons button:hover {
   border: 1px solid #ccc;
 }
-
+/* Display flex to make this div a flex container
+   Margin top 30px to create some space from the buttons
+   */
 section .main .languages {
   display: flex;
   margin-top: 30px;
 }
-
+/* List style none to remove the bullet points from the list items
+   Margin top 0px margin right 5px - using shorthand notation
+   Font size 13
+   */
 section .main .languages li {
   list-style: none;
   margin: 0 5px;
   font-size: 13px;
 }
-
+/* Text decoration set to none to remove the underline
+   Color set to a shade of blue to show hyperlink
+   */
 section .main .languages li a {
   text-decoration: none;
   color: #1a0dab;
 }
-
+/* Text decoration set to show underline on hover
+   */
 section .main .languages li a:hover {
   text-decoration: underline;
 }
-
+/* Position absolute to place anywhere in the page
+   Bottom and left set to 0 to keep the footer in the bottom left
+   Width 100% to take up the entire width of screen
+   Background set to a shade of gray
+   */
 section .footer {
   position: absolute;
   bottom: 0;
@@ -230,41 +243,60 @@ section .footer {
   width: 100%;
   background: #f2f2f2;
 }
-
+/* CSS to format both rows in the footer
+   Padding creates space both above and below text in each row
+   Border top to create a separation between the rows
+   */
 section .footer .row {
   padding: 15px 25px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
-
+/* Updating the text color for the country div */
 section .footer .row .country {
   color: #5f6368;
 }
-
+/* Display flex to make row2 a flex container
+   Justify content space between to create left side row2 and right side row2
+   */
 section .footer .row.row2 {
   display: flex;
   justify-content: space-between;
 }
-
+/* Display set to flex to make each ul item flexible
+   */
 section .footer .row.row2 ul {
   display: flex;
 }
-
+/* List style set to none to remove the bullets from the links
+   */
 section .footer .row.row2 ul li {
   list-style: none;
 }
-
+/* Text decoration set to none to remove underline on the url
+   Font size 14 for appearance
+   Color set to #5f6368
+   Margin left set to 0px to remove space from the left
+   Margin right set to 25px to create space between list items
+   */
 section .footer .row.row2 ul li a {
   text-decoration: none;
   font-size: 14px;
   color: #5f6368;
+  margin-left: 0px;
   margin-right: 25px;
 }
-
+/* ul:nth-child is used to select the Nth ul object in the footer
+   The 2nd ul child is associated with the Privacy Terms Settings list
+   Text decoration set to none to remove underlines from the url
+   Font size 14 for appearance
+   Color set to #5f6368
+   Margin right set to 0px to keep the items closer to the right
+   Margin left to create space between list items
+   */
 section .footer .row.row2 ul:nth-child(2) li a {
   text-decoration: none;
   font-size: 14px;
   color: #5f6368;
   margin-right: 0px;
   margin-left: 25px;
-
 }
