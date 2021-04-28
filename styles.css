@@ -77,6 +77,7 @@ section header ul li a:hover {
   text-decoration: underline;
   color: #111;
 }
+
 /* This section is the css styling for the Sign in button
    Background color set to #1a73e8
    Removed the border and outline from the button
@@ -109,21 +110,39 @@ section header ul li button {
 section header ul li button:hover {
   background-color: #2b7de9;
 }
-
+/* This section styles the google image, search bar, search buttons, and language section
+   Width set to 600px to match google search bar width
+   Flex direction set to column to organize the items in this main div from the top-down
+   Align and justify set to center to center all flex items
+   Align center for vertical alignment
+   Justify center for horizontal alignment
+   Margin bottom to slightly lift the section up
+   */
 section .main {
-  width: 500px;
+  width: 580px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 100px;
 }
-
+/* Position relative to allow for movement
+   Width 100% to take up the entire screen
+   Margin-top set to 20px to create room on between the Google image and the search bar
+   */
 section .main .searchBar {
   position: relative;
   width: 100%;
   margin-top: 20px;
 }
-
+/* Search bar width takes 100% of the container width (580px)
+   Padding for the height of the search
+   Padding left and right for the text to line up properly in the bar
+   Border radius to round the corners
+   Border for the solid border around the search bar
+   No outline
+   Font size to adjust the text size when you type in the search bar
+   */
 section .main .searchBar .search {
   width: 100%;
   padding: 13px;
@@ -134,10 +153,18 @@ section .main .searchBar .search {
   outline: none;
   font-size: 16px;
 }
-
+/* Icons are within the search div
+   Top 0px aligns the icons with the search bar
+   Width 100% will stretch the icon div the length of the search bar
+   Display flex to make the icon div a flex container
+   Padding to adjust the positioning of the icons
+   Justify space between to create the left side and right side effect
+   Align items center to center items
+   No pointer events
+   */
 section .main .searchBar .icons {
   position: absolute;
-  top: 0;
+  top: 0px;
   width: 100%;
   display: flex;
   padding: 12px 20px;
@@ -145,11 +172,20 @@ section .main .searchBar .icons {
   align-items: center;
   pointer-events: none;
 }
-
+/* Margin top to create space between the search bar and buttons
+   */
 section .main .buttons {
   margin-top: 20px;
 }
-
+/* Margin and padding to position buttons neatly
+   Color for the specific color google uses
+   Background color for the specific color google uses
+   Font size 14 for a neat size
+   No border
+   Cursor becomes a pointer on hover
+   Border radius of 4px to smooth corners
+   Border 1px solid transparent to show a slight border
+   No outline*/
 section .main .buttons button {
   margin-top: 0 5px;
   padding: 12px 20px;
