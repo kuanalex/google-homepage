@@ -43,38 +43,57 @@ section header {
   justify-content: space-between;
   padding: 20px;
 }
-
+/* Display flex to make the ul a flex container
+   Justify content and align center*/
 section header ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+/* List style none gets rid of the bullet points of the list items
+   Margin left gives space to the left of the list item
+   Font family is useds to set the font
+   Font size set to 14px
+   */
 section header ul li {
   list-style: none;
   margin-left: 20px;
   font-family: arial;
   font-size: 14px;
 }
-
+/* Color sets the text color of the hyper links
+   Text decoration set to none removes the underline from the links
+   Font size set to 14px
+   */
 section header ul li a {
 
   color: #111;
   text-decoration: none;
   font-size: 14px;
 }
-
+/* Text decoration underline draws a line under the link when hovered over
+   The color of the url will change when hovered over*/
 section header ul li a:hover {
   text-decoration: underline;
   color: #111;
 }
-
-
+/* This section is the css styling for the Sign in button
+   Background color set to #1a73e8
+   Removed the border and outline from the button
+   Color of the font set to #fff
+   Font size 14 and weight set to 500 or 50% boldness
+   Min width is the width of the button
+   9px padding top bottom
+   23px padding left right
+   Text and vertical alignment to center
+   Border radius to round the corners slightly
+   Cursor set to pointer to become a pointed finger on hover
+   */
 section header ul li button {
   background: #1a73e8;
   border: none;
   outline: none;
-  padding: 8px 14px;
+  padding: 10px 14px;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -85,10 +104,10 @@ section header ul li button {
   border-radius: 4px;
   cursor: pointer;
 }
-
+/* Change background color to #2b7de9 on hover
+*/
 section header ul li button:hover {
   background-color: #2b7de9;
-  ;
 }
 
 section .main {
