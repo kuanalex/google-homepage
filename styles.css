@@ -1,10 +1,26 @@
+
+/* This css selects all classes
+   Margin/padding set to 0 to make a cleaner look
+   Margin is the space outside something
+   Padding is the space inside something
+   border-box accounts for any border and padding when adjusting weight and height
+    */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0; 
+  padding: 0; 
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
+/* Used to contain the entire webpage 
+   Position is relative to allow top, left, right, bottom properties
+   Width determines how much of the screen the section takes up, 100% being the whole screen
+   Display flex enables flex content for all children of section
+   Justify content center distributes space between and around content items of a flex container
+   Space-between is useful for pushing objects in the same container apart
+   Align items center aligns flex items in the center
+   100vw is 100% view width
+   100vh is 100% view height
+   These are useful to make things full page */
 section {
   position: relative;
   width: 100%;
